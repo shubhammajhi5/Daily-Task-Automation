@@ -5,7 +5,7 @@ import webbrowser
 import requests
 from bs4 import BeautifulSoup
 
-headers = {"User-Agent" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"}
+headers = {"User-Agent" : "YOUR-USER-AGENT"}
 
 print('Googling...')
 res = requests.get('https://www.google.com/search?q=' + ' '.join(sys.argv[1:]), headers = headers)
